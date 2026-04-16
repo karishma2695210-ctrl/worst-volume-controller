@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Riddle Volume Controller</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="container">
+  <h1>Riddle Volume Controller</h1>
+  <div id="volumeDisplay">Volume: 0%</div>
+  <div id="hint"></div>
+  <div class="controls">
+    <input type="text" id="sequenceInput" placeholder="Answer here">
+    <button id="submitBtn">Submit</button>
+  </div>
+  <input type="file" id="audioFileInput" accept="audio/*">
+  <div class="progress-container">
+    <div id="volumeBar"></div>
+  </div>
+  <audio id="audioPlayer" controls loop style="display:none;"></audio>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>

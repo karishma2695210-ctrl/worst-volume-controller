@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(0, 0, 255);
+  transition: background-color 0.5s;
+}
+
+.container {
+  background: rgba(30, 30, 30, 0.95);
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  text-align: center;
+  color: #fff;
+  width: 380px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #00ffff;
+}
+
+#volumeDisplay {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+#hint {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  margin-right: 10px;
+  width: 150px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: #00ffff;
+  color: #000;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #00b8b8;
+  transform: scale(1.05);
+}
+
+input[type="file"] {
+  margin-bottom: 15px;
+}
+
+.progress-container {
+  width: 100%;
+  height: 15px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+#volumeBar {
+  width: 0%;
+  height: 100%;
+  background: #00ffff;
+  border-radius: 10px;
+  transition: width 0.3s;
+}
